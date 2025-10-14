@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+    </head>
+    <body>
+        <div class="top-banner">
+            <span class="banner-text"> Freshly Baked Everyday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Same day deliveries on orders over ₺1000 between 09:00 AM and 12:00 PM </span>
+        </div>
+
+        <!-- Title Section -->
+        <div class="title">
+            <a href="index.html">
+                <img class="logo" src="logo1.svg" alt="Logo" width="25%">
+                <h3>Your one-stop shop for delicious baked goods</h3>
+            </a>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="#main-menu" id="menu">Menu</a>
+            <a href="#about-us" id="about">About Us</a>
+            <a href="#contact-info" id="contact">Contact</a>
+        </nav>
+        <img class="main-image" src="bakery.jpg" alt="Smell the deliciousness" width="90%" height="50%">
+
+        <!-- Floating Toggle Button -->
+        <div id="navToggle" class="hidden">☰</div>
+
+        <!-- Hidden Mini Navbar -->
+        <div id="miniNav" class="mini-nav hidden">
+        <a href="#main-menu">Menu</a>        
+        <a href="#about-us">About Us</a>
+        <a href="#contact-info">Reservation</a>
+        </div>
+
+
+        <!-- Main Menu Section -->
+        <div class="separator"></div>
+        <div id="main-menu">
+            <h1 class="sweet-treats">Sweet Treats</h1>
+            <div class="menu-boxes">
+                <div class="menu-box" id="cookie">
+                    <p>Cookies</p>
+                    <img src="Cookies.png" alt="Cookies Icon">
+                </div>
+                <div class="menu-box" id="macaron">
+                    <img src="macaron.png" alt="Macarons Icon">
+                    <p>Macarons</p>
+                </div>
+                <div class="menu-box" id="cake">
+                    <p>Cakes</p>
+                    <img src="Cakes.png" width="100%" alt="Cakes Icon">
+                </div>
+                <div class="cookie-basket">
+                    <button id="closeCookieBasket" style="position:absolute;top:16px;right:24px;">✕</button>
+                </div>
+                <div class="macaron-basket">
+                    <button id="closeMacaronBasket" style="position:absolute;top:16px;right:24px;">✕</button>
+                </div>
+                <div class="cake-basket">
+                    <button id="closeCakeBasket" style="position:absolute;top:16px;right:24px;">✕</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div id="about-us">
+            <div class="about-us-container">
+                <div class="about-us-left">
+                    <h1 class="about-us-title">About Us</h1>
+                    <img src="underline3.svg" class="underline2" width="30%">
+                    <p class="about-us-text">
+                        Based in Ankara, we have been serving freshly baked goods since 2020. We started off with Macarons (our classic!), and have expanded our menu ever since. We are available for catering services, and we deliver orders over ₺1000 for free within Ankara. We hope to see you soon!
+                    </p>
+                </div>
+                <div class="about-us-right">
+                    <img src="bakery2.svg" alt="Bakery Team" class="about-us-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact-info">
+            <h1 class="contact-title">Reserve a Catering</h1>
+            <form id="contact-form" action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Contact Number</label>
+                <p>(Make sure we can contact this number!)</p>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+                
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
